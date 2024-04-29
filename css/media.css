@@ -1,0 +1,835 @@
+@media screen and (max-width: 750px)
+{
+	header .head_button
+	{
+		display: none;
+	}
+
+	header .mobile_head_button
+	{
+		display: block !important;
+	}
+
+	header .prof_box 
+	{
+	    margin-right: 25px;
+	}
+
+	header .wrap
+	{
+		padding: 0 20px;
+	}
+
+	header .head_logo
+	{
+		width: 120px;
+	}
+
+	header 
+	{
+	    padding: 15px 0;
+	}
+
+	header .about_pers 
+	{
+	    top: calc(100% + 20px);
+	    left: -220px;
+	}
+
+	header
+	{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+	}
+
+	.main_wraper
+	{
+		margin-top: 76px;
+	}
+}
+
+
+/********************************/
+@media screen and (max-width: 1340px)
+{
+	footer .color_line
+	{
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 1100px)
+{
+	footer .color_line
+	{
+		margin: 0 10px;
+	}
+
+	footer .delimeter
+	{
+		margin: 0 15px;
+	}
+
+	footer *
+	{
+		font-size: 14px !important;
+	}
+
+	footer .color_line
+	{
+		width: 120px;
+	}
+
+	footer .quest_box
+	{
+		left: auto;
+		right: -180px;
+	}
+}
+
+@media screen and (max-width: 750px)
+{
+	footer .quest_boxx img
+	{
+		display: none;
+	}
+
+	footer .obj_box .obj_text
+	{
+		margin-right: 0px;
+	}
+
+	footer
+	{
+		margin-top: 20px;
+	}
+}
+/*************************************/
+@media screen and (max-width: 1480px)
+{
+	.quest_box
+	{
+		left: 0px;
+	}
+}
+
+@media screen and (max-width: 1400px)
+{
+	.detail .main_info .bottom_box
+	{
+		flex-direction: column;
+	}
+
+	.detail .main_info .fact_box
+	{
+		margin-bottom: 10px;
+	}
+
+	/*.detail .material .left_info
+	{
+		width: calc(100% - 110px - 10px);
+	}*/
+
+	/*.detail .cod_box
+	{
+		width: 110px;
+	}*/
+}
+
+@media screen and (max-width: 1100px)
+{
+	.detail .prop_value
+	{
+		width: calc(100% - 150px - 10px);
+	}
+
+	.save_box .save_list 
+	{
+		width: 120px;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (max-width: 1000px)
+{
+	.detail .about_box
+	{
+		flex-direction: column;
+	}
+
+	.detail .left_box,
+	.detail .right_box
+	{
+		width: 100%;
+	}
+
+	.detail #create_new_job
+	{
+		max-width: 350px;
+		margin: 20px auto 30px auto;
+	}
+
+	.detail .delimeter
+	{
+		margin: 30px 0;
+	}
+
+	.detail .job_catigory
+	{
+		width: 100%;
+		max-width: 340px;
+		margin: 0 auto;
+	}
+
+	.detail .status
+	{
+		margin-bottom: 10px;
+	}
+}
+
+/******************************/
+@media screen and (max-width: 1110px)
+{
+	.detail .side_var
+	{
+		margin-right: 10px;
+	}
+}
+
+@media all and (max-width: 1150px) and (min-width: 1000px)
+{
+	.detail .pikets .prop_name
+	{
+		width: 120px;
+	}
+
+	.detail .pikets .prop_value 
+	{
+	    width: calc(100% - 120px - 5px);
+	}
+
+	.detail .pikets .prop_item.end
+	{
+		padding-left: 2px;
+	}
+}
+
+@media screen and (max-width: 750px)
+{
+	.detail .prop_item.side .prop_value
+	{
+		flex-direction: column;
+	}
+
+	.detail .prop_item.side
+	{
+		padding: 20px 0;
+	}
+
+	.detail .pikets
+	{
+		flex-direction: column;
+	}
+
+	.detail .pikets .prop_item
+	{
+		width: 100%;
+	}
+
+	.detail .pk_before, 
+	.detail .pk_after
+	{
+		font-size: 16px;
+	}
+
+	.detail .pk_before::placeholder,
+	.detail .pk_after::placeholder
+	{
+	  font-size: 16px;
+	}
+
+	.detail .pikets .prop_item.end
+	{
+		border: none;
+		padding-left: 0px;
+	}
+
+	.detail .pikets .prop_value
+	{
+		width: calc(100% - 108px - 20px);
+	}
+
+	.detail .pikets .prop_item 
+	{
+	    padding: 10px 0;
+	}
+
+	.detail .pikets .prop_item.end
+	{
+		padding-top: 0px;
+	}
+
+	.detail .side_var
+	{
+		text-align: left;
+	}
+
+	.detail .del 
+	{
+	    width: calc(100% + 40px);
+	    left: -20px;
+	}
+
+
+
+
+
+
+	.detail .title
+	{
+		font-size: 24px;
+	}
+
+	.for_focus.active
+	{
+	  border: 2px solid #553DF2 !important;
+	}
+
+	.detail .hide_mobile
+	{
+		display: none;
+	}
+
+	.detail .prev,
+	.for_mobile
+	{
+		display: block !important;
+	}
+
+	.detail .count_text
+	{
+		margin-right: 10px;
+	}
+
+	.detail #create_new_job
+	{
+		margin: 20px auto 20px auto;
+	}
+
+	.detail .cat_name
+	{
+		font-size: 15px;
+	}
+
+	.detail .delimeter 
+	{
+		margin: 20px 0 35px 0;
+	}
+
+	.detail .status
+	{
+		display: none;
+	}
+
+	.detail .cancel_execution.desctop
+	{
+		display: none;
+	}
+
+	.detail .for_mobile_box
+	{
+		display: none;
+		transition: none;
+	}
+
+	.detail .right_top
+	{
+		margin: 20px 0 10px 0;
+	}
+
+	.detail .cod_box
+	{
+		display: none;
+	}
+
+	.detail .left_info
+	{
+		width: 100%;
+	}
+
+	.detail .prop_item
+	{
+		font-size: 15px;
+	}
+
+	.detail .prop_name
+	{
+		width: 108px;
+	}
+
+	.detail .prop_value 
+	{
+		width: calc(100% - 108px - 20px);
+	}
+
+	.detail .top_box,
+	.detail .bottom_box 
+	{
+		padding: 15px 20px;
+	}
+
+	.detail .main_info .fact_box
+	{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.detail .bottom_box
+	{
+		align-items: flex-start;
+	}
+
+	.for_mobile_line
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.detail .main_info .fact_box
+	{
+		width: 100%;
+	}
+
+	.detail .full.for_mobile
+	{
+		display: flex !important;
+		margin-right: 0px;
+		margin-left: 5px;
+		/*width: 90px;*/
+	}
+
+	.detail .inp_box
+	{
+		margin: 0px;
+		min-width: 105px;
+	}
+
+	.detail .inp_box,
+	.detail .inp_box input,
+	.detail .inp_box input::placeholder
+	{
+		font-size: 16px;
+	}
+
+	.detail .inp_box input
+	{
+		width: 70px;
+	}
+
+	.detail .fact_text
+	{
+		margin-bottom: 5px;
+	}
+
+	.detail .full_status .full
+	{
+		display: none;
+	}
+
+	.for_desctop
+	{
+		display: none !important;
+	}
+
+	.detail .cancel_execution.mobile
+	{
+		display: flex !important;
+		width: 102px;
+		height: 42px;
+		margin-left: 5px;
+		margin-bottom: 10px;
+	}
+
+	.detail .full_status
+	{
+		width: 100%;
+	}
+
+	.detail .statuss
+	{
+		margin-bottom: 10px;
+	}
+
+	.detail .sub_sect 
+	{
+		margin-top: 20px;
+	}
+
+	.detail .sub_title
+	{
+		margin-bottom: 0px;
+	}
+
+	.detail .first_line
+	{
+		margin-bottom: 10px;
+	}
+
+	.detail .top_box
+	{
+		flex-direction: column;
+	}
+
+	.detail .sub_sect .left_info
+	{
+		width: 100%;
+	}
+
+	.detail .form_manag_button
+	{
+		width: 100%;
+		max-width: 310px;
+		margin: 10px auto 10px auto;
+	}
+
+	.detail .full
+	{
+		display: none;
+	}
+
+	.detail .fact_box
+	{
+		flex-direction: column;
+		width: 100%;
+		align-items: flex-start;
+	}
+
+	.detail .button_box_rules
+	{
+		width: 100%;
+	}
+
+	.detail .check_remoove_box
+	{
+		left: auto;
+  		right: calc(50% - 151px);
+	}
+
+	.detail .weight_mark
+	{
+		font-size: 15px;
+		color: #545B78;
+	}
+
+	.detail .material .bottom_box
+	{
+		flex-direction: column;
+	}
+
+	.detail #load_fact
+	{
+		width: 100%;
+		max-width: 310px;
+		margin: 20px auto 15px auto;
+	}
+
+	.detail .right_top
+	{
+		flex-direction: column-reverse;
+	}
+
+	.detail .save_box
+	{
+		flex-direction: column;
+	}
+
+	.save_box .save_list
+	{
+		width: 100%;
+		max-width: 350px;
+		margin: 10px 0;
+	}
+
+	.detail .save_box
+	{
+		width: 100%;
+	}
+
+	.detail .tab_arrow.active
+	{
+		transform: rotate(180deg);
+	}
+
+	.detail .tub_list
+	{
+		transition: none;
+	}
+
+}/*750*/
+
+@media screen and (max-width: 380px)
+{
+	.detail .cancel_execution.mobile,
+	.detail .statuss
+	{
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/***********************/
+
+@media screen and (max-width: 750px)
+{
+	#popup_plan .button_line
+	{
+		justify-content: center;
+	}
+
+	#popup_plan
+	{
+		max-width: 350px !important;
+	}
+
+	#popup_plan .popup_title,
+	#popup_plan .middle_box,
+	#popup_plan .reason_box
+	{
+		padding: 20px 30px 20px 30px;
+	}
+	
+	#popup_plan .fact_box
+	{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#popup_plan .for_mobile
+	{
+		display: flex !important;
+	}
+
+	#popup_plan .about_text
+	{
+		margin-bottom: 10px;
+	}
+
+	#popup_plan .inp_box, 
+	#popup_plan .inp_box input, 
+	#popup_plan .inp_box input::placeholder
+	{
+		font-size: 16px;
+	}
+
+	#popup_plan .inp_box
+	{
+		margin: 0px;
+	}
+
+	#popup_plan .inp_box input
+	{
+		width: 70px;
+	}
+
+	#popup_plan .fact_box
+	{
+		width: 100%;
+	}
+
+	#popup_plan .reason_title
+	{
+		margin-bottom: 10px;
+	}
+
+	#popup_plan .this_var
+	{
+		padding: 10px 20px;
+	}
+
+	#popup_plan #reason_text
+	{
+		height: 100px;
+	}
+
+	.popup_avto_workers
+	{
+		max-width: 370px !important;
+	}
+
+	.popup_avto_workers .title_line 
+	{
+		padding: 20px 30px 0 30px;
+	}
+
+	.popup_avto_workers .smth_box
+	{
+		padding: 10px;
+	}
+
+	.popup_avto_workers .status_box
+	{
+		width: 25px;
+	}
+
+	.popup_avto_workers .road_equipment .smth_name
+	{
+		font-size: 15px;
+		width: calc(100% - 25px - 90px);
+	}
+
+	.popup_avto_workers .road_equipment .smth_num
+	{
+		font-size: 14px;
+		width: 90px;
+		padding-left: 10px;
+	}
+
+	.popup_avto_workers .smth_item
+	{
+		padding: 5px 10px;
+	}
+
+	.popup_avto_workers .bottom_line 
+	{
+		padding: 20px 10px;
+	}
+
+	.popup_avto_workers .choose_button
+	{
+		width: 140px;
+	}
+
+	.popup_avto_workers .сounterparty_equipment .smth_name 
+	{
+		width: calc(50% - 12px);
+	}
+
+	.popup_avto_workers .сounterparty_equipment .smth_num 
+	{
+		width: calc(50% - 13px);
+	}
+
+	#popup_workers .smth_name 
+	{
+		width: calc(60% - 13px);
+		font-size: 15px;
+	}
+
+	#popup_workers .smth_num 
+	{
+		width: calc(40% - 12px);
+		font-size: 14px;
+		color: #758198;
+	}
+
+	.popup_avto_workers .var_box
+	{
+		left: 10px;
+	}
+
+	#popup_materials .smth_name 
+	{
+		width: calc(100% - 25px - 50px);
+		font-size: 15px;
+	}
+
+	#popup_materials .smth_num 
+	{
+		width: 50px;
+		font-size: 14px;
+		padding-left: 10px;
+	}
+
+	#popup_jobs .smth_name 
+	{
+		width: calc(100% - 70px);
+		font-size: 15px;
+	}
+
+	#popup_jobs .smth_num 
+	{
+		width: 70px;
+		padding-left: 10px;
+		font-size: 14px;
+	}
+
+	#popup_jobs .smth_item 
+	{
+		padding: 5px 15px;
+	}
+}
+
+
+/************Поправочные стили на футер********/
+@media screen and (max-width: 750px)
+{
+	footer .quest_boxx,
+	footer .delimeter,
+	footer .obj_name
+	{
+		display: none;
+	}
+
+	footer .tesks_box
+	{
+		flex-direction: column;
+	}
+
+	footer .obj_box
+	{
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	footer .obj_box .quest_img_box
+	{
+		width: 36px;
+	}
+
+	footer .tesks_box
+	{
+		width: calc(100% - 36px - 10px);
+		align-items: flex-start;
+	}
+
+	footer .color_line
+	{
+		width: 100%;
+		margin: 10px 0 0 0;
+	}
+
+	footer
+	{
+		padding: 15px 0;
+	}
+
+	footer .save_box
+	{
+		display: none !important;
+	}
+
+	footer .save_box_mobile
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	footer .save_box_mobile div
+	{
+		font-size: 16px;
+		margin-left: 10px;
+		color: #F27E3D;
+	}
+
+	footer .quest_box
+	{
+		right: 0px;
+	}
+}
+
+/************Поправочные стили на футер********/

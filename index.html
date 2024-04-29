@@ -1,0 +1,1187 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>АСУП</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+	<script type="text/javascript" src="js/jquery.mask.min.js"></script>
+</head>
+<body>
+	<div class="main_wraper">
+		<div class="header_content">
+			<header>
+				<div class="wrap">
+					<a href="/"><img class="head_logo" src="img/head_logo.svg"></a>
+					<div class="butt_box">
+						<div class="prof_box mark_class">
+							<div id="this_prof_button">
+								<div class="prof_button head_button mark_class">
+									<span class="mark_class">Мой профиль</span>
+									<svg class="mark_class" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L5 5L9 1" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+
+								<svg class="mobile_head_button hide" width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="10.4672" cy="6.12585" r="5.22585" stroke="#50575B" stroke-width="1.8"/>
+									<path d="M21.0482 20.0475C18.8144 16.676 15.157 14.4785 11.0241 14.4785C6.89121 14.4785 3.2338 16.676 1 20.0475" stroke="#50575B" stroke-width="1.8" stroke-linecap="round"/>
+								</svg>
+							</div>
+							
+							<div class="about_pers hide mark_class">
+								<div class="position mark_class">Инженер-механик</div>
+								<div class="fio mark_class">Флолов П. А.</div>
+								<div class="per_phone mark_class">+7 (923) 200-01-08</div>
+								<div class="branch last mark_class">Филиал Новосибирскавтодор</div>
+								<div class="branch_name last mark_class">и название в две строки</div>
+							</div>
+						</div>
+
+						<div id="exit_button">
+							<div class="head_button">Выйти</div>
+							<svg class="mobile_head_button hide" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.5 1H4C2.34315 1 1 2.34315 1 4V17C1 18.6569 2.34315 20 4 20H8.5" stroke="#50575B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8.5 10.5H20M20 10.5L15.5 5M20 10.5L15.5 15.5" stroke="#50575B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- ID выбранной техники или сотрудника не удалять -->
+			<div class="hide_id_tech hide"></div>
+			<div class="hide_id_pers hide"></div>
+			<div class="hide_id_material hide"></div>
+			<!-- ID выбранной техники или сотрудника не удалять -->
+			<section class="detail wrap">
+				<h1 class="title nav_chain">
+					<a class="ready hide_mobile" href="#">Проекты</a>
+					<svg class="hide_mobile" width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8 15L1 8L8 1" stroke="#656B81" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<a class="ready hide_mobile" href="#">8404 Толмачево</a>
+					<a class="prev hide" href="#">...</a>
+					<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8 15L1 8L8 1" stroke="#656B81" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<a href="#"> 1000304</a>
+				</h1>
+
+				<div class="about_box">
+					<div class="left_box tub_box">
+						<div class="left_top tub_button">
+							<h2 class="left_title">Список работ</h2>
+							<div class="count">
+								<img src="img/galka_gray.svg">
+								<div class="count_text">2 / <span class="all_jobs_numb">3</span></div>
+								<svg class="for_mobile hide tab_arrow" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="14" cy="14" r="14" fill="#553DF2"/>
+									<path d="M9 12.5L14 17.5L19 12.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+
+						<div class="for_mobile_box tub_list">
+							<a id="create_new_job" data-fancybox="" data-src="#popup_jobs" href="javascript:;">
+						        Добавить работу из проекта
+						    </a>
+
+							<div class="job_catigory list">
+								<div class="cat_item" data-idjob="4">
+									<div class="cat_name">Укрепление обочин ЩПС С5</div>
+									<div class="round" style="background: #FFD873"></div>
+								</div>
+								<div class="cat_item" data-idjob="5">
+									<div class="cat_name">Укрепление обочин ЩПС С5</div>
+									<div class="round" style="background: #48C698"></div>
+								</div>
+								<div class="cat_item" data-idjob="6">
+									<div class="cat_name">
+										Расчистка русла трубы у подошвы насыпи бульдозером мощьностью 79 кВт (108 л.с) от ила насосом с ...
+									</div>
+									<div class="round" style="background: #FFD873"></div>
+								</div>
+							</div>
+
+							<div class="delimeter"></div>
+						</div>
+
+						<div class="status mark_class">
+							<img class="mark_class" src="img/quest.svg">
+							<div class="quest_text mark_class">Статусы выполнения</div>
+							<div class="quest_box mark_class hide">
+								<div class="status_item mark_class">
+									<div class="round mark_class" style="background: #D2D9E5"></div>
+									<div class="status_name mark_class">Ожидается выполнение</div>
+								</div>
+
+								<div class="status_item mark_class">
+									<div class="round mark_class" style="background: #48C698"></div>
+									<div class="status_name mark_class">Выполнено</div>
+								</div>
+
+								<div class="status_item two_round_box mark_class">
+									<div class="two_round mark_class">
+										<div class="round left mark_class" style="background: #FFD873"></div>
+										<div class="round mark_class" style="background: #FF8268"></div>
+									</div>
+									<div class="status_name mark_class">Частичное выполнение</div>
+								</div>
+
+								<div class="status_item mark_class">
+									<div class="round mark_class" style="background: #BD9DFF"></div>
+									<div class="status_name mark_class">Не работали</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="right_box">
+						<div class="right_top">
+							<div class="for_mobile_line">
+								<div class="right_top_title">Сведение о работе</div>
+
+								<div class="for_mobile hide cod_vbs">
+									Код WBS: 02020918
+								</div>
+							</div>
+
+							<div class="save_box hide">
+								<div class="lightning">
+									<svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 9.5L7 0L4.5 7.5H9L2 16.5L4 9.5H0Z" fill="#F27E3D"/>
+									</svg>
+									<div>Есть несохраненные изменения</div>
+								</div>
+								
+								<a data-fancybox="" class="save_list" data-src="#popup_plan" href="javascript:;">
+							        Сохранить
+							    </a>
+							</div>
+
+							<a data-fancybox="" class="cancel_execution desctop" data-src="#popup_plan" href="javascript:;">
+						        Отменить выполнение
+						    </a>
+						</div>
+
+						<div class="main_info for_focus">
+							<div class="top_box">
+								<div class="left_info">
+									<div class="prop_item">
+										<div class="prop_name">Дата</div>
+										<div class="prop_value">22.01.2023 (1 смена)</div>
+									</div>
+								</div>
+								<div class="cod_box">Код в WBS: 02020918</div>
+
+								<div class="another_props">
+									<div class="prop_item">
+										<div class="prop_name">Работа этапа</div>
+										<div class="prop_value">Укрепление обочин ЩПС С5 (0-30)</div>
+									</div>
+
+									<div class="prop_item">
+										<div class="prop_name">План работ</div>
+										<div class="prop_value">7 000 м²</div>
+									</div>
+
+
+
+
+
+									<div class="prop_item side">
+										<div class="top_del del"></div>
+										<div class="prop_name">Сторона работы</div>
+										<div class="prop_value">
+											<div class="side_var">Обе стороны</div>
+											<div class="side_var">Левая сторона</div>
+											<div class="side_var">Правая сторона</div>
+										</div>
+										<div class="bott_del del"></div>
+									</div>
+
+
+
+
+
+									<div class="pikets">
+										<div class="prop_item">
+											<div class="prop_name">ПК начала</div>
+											<div class="prop_value">
+												<input data-curval="0" type="text" placeholder="0" class="pk_before for_listen">
+												<span>/</span>
+												<input data-curval="0.00" type="text" placeholder="0.00" class="pk_after for_listen">
+											</div>
+										</div>
+
+										<div class="prop_item end">
+											<div class="prop_name">ПК окончания</div>
+											<div class="prop_value">
+												<input data-curval="0" type="text" placeholder="0" class="pk_before for_listen">
+												<span>/</span>
+												<input data-curval="0.00" type="text" placeholder="0.00" class="pk_after for_listen">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="bottom_box insert_input_box">
+								<div class="fact_box">
+									<div class="fact_text">Факт выполнения</div>
+
+									<div class="for_mobile_line">
+										<div class="inp_box">
+											<input id="top_inp_main" data-curval="0" class="form_input for_listen" type="text" placeholder="0">
+											<span>м²</span>
+											<span>&nbsp;&nbsp;/&nbsp;&nbsp;<span class="full_fact_val top">100</span> м²</span>
+										</div>
+
+										<div class="full top for_mobile hide">
+											<img src="img/full.svg">
+											<div>Полное</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="full_status">
+									<div class="full top">
+										<img src="img/full.svg">
+										<div>Полное выполнение плана</div>
+									</div>
+									<div class="for_mobile_line">
+										<div class="statuss top" style="background: #BD9DFF;">
+											<div class="for_desctop">Не работали</div>
+											<div class="for_mobile hide">Не работали</div>
+										</div>
+
+										<a data-fancybox="" class="cancel_execution mobile hide" data-src="#popup_plan" href="javascript:;">
+											Отмена
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="material sub_sect tub_box">
+							<div class="first_line">
+								<h2 class="sub_title tub_button">
+									Материалы
+								</h2>
+
+								<div class="first_line_right">
+									<div class="add_smth" id="add_material">
+										<svg class="tab_arrow" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 1.5V17.5" stroke="#553DF2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M1 9.5L17 9.5" stroke="#553DF2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+										<div class="add_text">
+											<span class="for_desctop">Добавить материалы</span>
+											<span class="for_mobile hide">Добавить</span>
+										</div>
+									</div>
+
+									<svg class="tab_arrow" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L8.5 8.5L16 1" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</div>
+							</div>
+
+							<div class="tub_list" id="all_material_box">
+								<div class="material_box option_box weight">
+									<div class="top_box">
+										<div class="left_info">
+											<div class="prop_item">
+												<div class="prop_name">Материал</div>
+												<div class="prop_value">0-30 Диабаз Каменный</div>
+											</div>
+
+											<div class="prop_item">
+												<div class="prop_name">Норма</div>
+												<div class="prop_value">2 000 тонн</div>
+											</div>
+										</div>
+										<div class="cod_box">Весовая</div>
+									</div>
+
+									<div class="bottom_box">
+										<div class="fact_box">
+											<div class="fact_text">Факт выполнения</div>
+											<div class="for_mobile_line">
+												<div class="inp_box">
+													<input class="form_input for_listen" type="text" placeholder="0" data-curval="0">
+													<span>т</span>
+													<span>&nbsp;&nbsp;/&nbsp;&nbsp;<span>2 000</span> т</span>
+												</div>
+
+												<div class="weight_mark for_mobile hide">
+													Весовой
+												</div>
+											</div>
+										</div>
+
+										<button id="load_fact">Загрузить факт</button>
+									</div>
+								</div>
+
+								<div class="material_box option_box for_focus" data-idmat="1">
+									<div class="top_box">
+										<div class="left_info">
+											<div class="prop_item">
+												<div class="prop_name">Материал</div>
+												<div class="prop_value mat_name">материал_1</div>
+											</div>
+
+											<div class="prop_item">
+												<div class="prop_name">Норма</div>
+												<div class="prop_value mat_norma">2 000 тонн</div>
+											</div>
+										</div>
+
+										<div class="button_box_rules">
+											<a data-idmat="1" data-fancybox="" data-src="#popup_materials" href="javascript:;" class="popup-mat replace form_manag_button">
+												<span class="for_desctop">Заменить</span>
+												<span class="for_mobile hide">Заменить материал</span>
+											</a>
+
+											<img class="remoove_items mark_class" src="img/basket.svg">
+											<div class="check_remoove_box hide mark_class">
+												<div class="remoove_quest mark_class">Удалить данный материал из списка задачи?</div>
+												<div class="rem_button_line mark_class">
+													<button class="leave mark_class">Оставить</button>
+													<button class="remoove_butt mark_class">Удалить</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="bottom_box insert_input_box">
+										<div class="fact_box">
+											<div class="fact_text">Факт выполнения</div>
+											<div class="for_mobile_line">
+												<div class="inp_box">
+													<input data-curval="0" class="form_input for_listen" type="text" placeholder="0">
+													<span class="mat_unit">т</span>
+													<span>&nbsp;&nbsp;/&nbsp;&nbsp;
+														<span class="full_fact_val">1 000</span>
+														<span>&nbsp;</span>
+														<span class="mat_unit">т</span>
+													</span>
+												</div>
+
+												<div class="full for_mobile hide">
+													<img src="img/full.svg">
+													<div>Макс.</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="full">
+											<img src="img/full.svg">
+											<div>Макс. значение</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="avto sub_sect tub_box">
+							<div class="first_line">
+								<h2 class="sub_title tub_button">
+									Техника
+								</h2>
+
+								<div class="first_line_right">
+									<div class="add_smth" id="add_avto">
+										<svg class="tab_arrow" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 1.5V17.5" stroke="#553DF2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M1 9.5L17 9.5" stroke="#553DF2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="add_text">
+											<span class="for_desctop">Добавить технику</span>
+											<span class="for_mobile hide">Добавить</span>
+										</div>
+									</div>
+
+									<svg class="tab_arrow" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L8.5 8.5L16 1" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</div>
+							<!-- data-idtech="1" - атрибут id из ,битрикс важно, дублируется в кнопочке -->					
+							<div id="all_tech_box" class="tub_list">
+								<div class="smth_box option_box for_focus" data-idtech="1">
+									<div class="top_box">
+										<div class="left_info">
+											<div class="prop_item">
+												<div class="prop_name">Техника</div>
+												<div class="prop_value">Бецема</div>
+											</div>
+
+											<div class="prop_item">
+												<div class="prop_name">Назначенная</div>
+												<div class="prop_value assigned_tech">дорожная_1</div>
+											</div>
+
+											<div class="prop_item">
+												<div class="prop_name">Норма</div>
+												<div class="prop_value">8 часов</div>
+											</div>
+										</div>
+
+										<div class="button_box_rules">
+											<a data-idtech="1" data-fancybox="" data-src="#popup_avto" href="javascript:;" class="popup-avto replace form_manag_button">
+												<span class="for_desctop">Заменить</span>
+												<span class="for_mobile hide">Заменить технику</span>
+											</a>
+
+											<img class="remoove_items mark_class" src="img/basket.svg">
+											<div class="check_remoove_box hide mark_class">
+												<div class="remoove_quest mark_class">Удалить данную технику из списка задачи?</div>
+												<div class="rem_button_line mark_class">
+													<button class="leave mark_class">Оставить</button>
+													<button class="remoove_butt mark_class">Удалить</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="bottom_box insert_input_box">
+										<div class="fact_box">
+											<div class="fact_text">Факт выполнения</div>
+
+											<div class="for_mobile_line">
+												<div class="inp_box">
+													<input data-curval="0" class="form_input for_listen" type="text" placeholder="0">
+													<span>ч</span>
+													<span>&nbsp;&nbsp;/&nbsp;&nbsp;<span class="full_fact_val">8</span> ч</span>
+												</div>
+
+												<div class="full for_mobile hide">
+													<img src="img/full.svg">
+													<div>Макс.</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="full">
+											<img src="img/full.svg">
+											<div>Макс. значение</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="workers sub_sect tub_box">
+							<div class="first_line">
+								<h2 class="sub_title tub_button">
+									Работники
+								</h2>
+
+								<div class="first_line_right">
+									<div class="add_smth" id="add_worker">
+										<svg class="tab_arrow" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9 1.5V17.5" stroke="#553DF2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M1 9.5L17 9.5" stroke="#553DF2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+										<div class="add_text">
+											<span class="for_desctop">
+												Добавить работника
+											</span>
+											<span class="for_mobile hide">
+												Добавить
+											</span>
+										</div>
+									</div>
+
+									<svg class="tab_arrow" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 1L8.5 8.5L16 1" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</div>
+
+							<!-- data-idpers="1" - атрибут id из ,битрикс важно, дублируется в кнопочке -->
+							<div id="all_worker_box" class="tub_list">
+								<div class="smth_box option_box for_focus" data-idpers="1">
+									<div class="top_box">
+										<div class="left_info">
+											<div class="prop_item">
+												<div class="prop_name">Работник</div>
+												<div class="prop_value position">должность_1</div>
+											</div>
+
+											<div class="prop_item">
+												<div class="prop_name">Назначен</div>
+												<div class="prop_value fio">инициалы_1</div>
+											</div>
+
+											<div class="prop_item">
+												<div class="prop_name">Норма</div>
+												<div class="prop_value">20 часов</div>
+											</div>
+										</div>
+										
+									    <div class="button_box_rules">
+									    	<a data-idpers="1" class="replace form_manag_button popup-workers" data-fancybox="" data-src="#popup_workers" href="javascript:;">
+										        <span class="for_desctop">Заменить</span>
+									    		<span class="for_mobile hide">Заменить работника</span>
+										    </a>
+
+									    	<img class="remoove_items mark_class" src="img/basket.svg">
+									    	<div class="check_remoove_box hide mark_class">
+									    		<div class="remoove_quest mark_class">Удалить данного работника из списка задачи?</div>
+									    		<div class="rem_button_line mark_class">
+									    			<button class="leave mark_class">Оставить</button>
+									    			<button class="remoove_butt mark_class">Удалить</button>
+									    		</div>
+									    	</div>
+									    </div>
+									</div>
+
+									<div class="bottom_box insert_input_box">
+										<div class="fact_box">
+											<div class="fact_text">Факт выполнения</div>
+										
+											<div class="for_mobile_line">
+												<div class="inp_box">
+													<input data-curval="0" class="form_input for_listen" type="text" placeholder="0">
+													<span>ч</span>
+													<span>&nbsp;&nbsp;/&nbsp;&nbsp;<span class="full_fact_val">20</span> ч</span>
+												</div>
+
+												<div class="full for_mobile hide">
+													<img src="img/full.svg">
+													<div>Макс.</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="full">
+											<img src="img/full.svg">
+											<div>Макс. значение</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		    <!-- Попап авто -->
+			<div style="display: none;" id="popup_avto" class="popup_avto_workers">
+		        <div class="title_line">
+		            <div id="road" class="title_item active">
+		            	<span class="for_desctop">Дорожная техника</span>
+						<span class="for_mobile hide">Дорожная</span>
+		            </div>
+		            <div id="сounterparty" class="title_item">
+		            	<span class="for_desctop">Техника контрагентов</span>
+						<span class="for_mobile hide">Контрагенты</span>
+		            </div>
+		        </div>
+
+		        <div class="smth_box road_equipment">
+		            <div class="smth_item not" data-idtech="1">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    дорожная_1
+		                </div>
+
+		                <div class="smth_num">6380ну54</div>
+		            </div>
+
+		            <div class="smth_item not" data-idtech="2">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    дорожная_2
+		                </div>
+
+		                <div class="smth_num">6380ну54</div>
+		            </div>
+
+		            <div class="smth_item free" data-idtech="3">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    дорожная_3
+		                </div>
+
+		                <div class="smth_num">6380ну54</div>
+		            </div>
+
+		            <div class="smth_item free" data-idtech="4">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    дорожная_4
+		                </div>
+
+		                <div class="smth_num">6380ну54</div>
+		            </div>
+		        </div>
+
+		        <div class="smth_box сounterparty_equipment hide">
+		            <div class="smth_item not" data-idtech="5">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    Контрагент_1
+		                </div>
+
+		                <div class="smth_num">6380ну54</div>
+		            </div>
+
+		            <div class="smth_item free" data-idtech="6">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    Контрагент_2
+		                </div>
+
+		                <div class="smth_num">6380ну54</div>
+		            </div>
+
+		            <div class="smth_item free" data-idtech="7">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    Контрагент_3
+		                </div>
+
+		                <div class="smth_num">6380ну54</div>
+		            </div>
+
+		            <div class="smth_item free" data-idtech="8">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    Контрагент_4
+		                </div>
+
+		                <div class="smth_num">6380ну54</div>
+		            </div>
+		        </div>
+
+		        <div class="bottom_line">
+		            <div class="choice_box mark_class">
+		                <div class="this_var mark_class">
+		                    <div class="mark_class" id="this_var_tech">Вся техника</div>
+		                    <svg class="mark_class" width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 0.5L5.5 5L10 0.5" stroke="#545B78" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                </div>
+		                <div class="var_box hide mark_class">
+		                    <div class="var_item active mark_class">
+		                        <div class="galka_box mark_class">
+		                            <svg class="galka hide mark_class" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M1 6.5L6 11.5L16.5 1" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                            </svg>
+		                        </div>
+		                        <div id="all_tech_var" class="var_text mark_class">Вся техника</div>
+		                    </div>
+
+		                    <div class="var_item mark_class">
+		                        <div class="galka_box mark_class">
+		                            <svg class="galka hide mark_class" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M1 6.5L6 11.5L16.5 1" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                            </svg>
+		                        </div>
+		                        <div id="only_free_avto" class="var_text mark_class">Только свободные</div>
+		                    </div> 
+		                </div>
+		            </div>
+		            <button data-iditem="" class="choose_button not_active" id="take_this_avto">Выбрать</button>
+		        </div>
+			</div>
+		    <!-- Попап авто -->
+
+		    <!-- Попап рабочие -->
+		    <div style="display: none;" id="popup_workers" class="popup_avto_workers">
+		        <div class="title_line">
+		            <div class="title_item active">Состав вахты</div>
+		        </div>
+
+		        <div class="smth_box">
+		            <div class="smth_item not" data-idpers="1">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    инициалы_1
+		                </div>
+
+		                <div class="smth_num">должность_1</div>
+		            </div>
+
+		            <div class="smth_item not" data-idpers="2">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    инициалы_2
+		                </div>
+
+		                <div class="smth_num">должность_2</div>
+		            </div>
+
+		            <div class="smth_item free" data-idpers="3">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    инициалы_3
+		                </div>
+
+		                <div class="smth_num">должность_3</div>
+		            </div>
+
+		            <div class="smth_item free" data-idpers="4">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    инициалы_4
+		                </div>
+
+		                <div class="smth_num">должность_4</div>
+		            </div>
+		        </div>
+
+		        <div class="bottom_line">
+		            <div class="choice_box mark_class">
+		                <div class="this_var mark_class">
+		                    <div class="mark_class" id="this_var_prof">Все профессии</div>
+		                    <svg class="mark_class" width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 0.5L5.5 5L10 0.5" stroke="#545B78" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                </div>
+		                <div class="var_box hide mark_class">
+		                    <div class="var_item active mark_class">
+		                        <div class="galka_box mark_class">
+		                            <svg class="galka hide mark_class" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M1 6.5L6 11.5L16.5 1" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                            </svg>
+		                        </div>
+		                        <div class="var_text mark_class">Все профессии</div>
+		                    </div>
+
+		                    <div class="var_item mark_class">
+		                        <div class="galka_box mark_class">
+		                            <svg class="galka hide mark_class" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                                <path d="M1 6.5L6 11.5L16.5 1" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                            </svg>
+		                        </div>
+		                        <div class="var_text mark_class">Только подходящая</div>
+		                    </div> 
+		                </div>
+		            </div>
+		            <button data-iditem="" class="choose_button not_active" id="take_this_person">Выбрать</button>
+		        </div>
+		    </div>
+		    <!-- Попап рабочие -->
+
+		     <!-- Попап материалы -->
+		    <div style="display: none;" id="popup_materials" class="popup_avto_workers">
+		        <div class="title_line">
+		            <div class="title_item active">Добавить материалы</div>
+		        </div>
+
+		        <div class="smth_box">
+		            <div class="smth_item free" data-idmat="3">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    материал_3
+		                </div>
+
+		                <div class="smth_num">кг</div>
+		            </div>
+
+		            <div class="smth_item free" data-idmat="4">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    материал_4
+		                </div>
+
+		                <div class="smth_num">шт</div>
+		            </div>
+
+		            <div class="smth_item free" data-idmat="5">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    материал_5
+		                </div>
+
+		                <div class="smth_num">м²</div>
+		            </div>
+
+		            <div class="smth_item free" data-idmat="6">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    материал_6
+		                </div>
+
+		                <div class="smth_num">м</div>
+		            </div>
+		        </div>
+
+		        <div class="bottom_line">
+		            <button data-iditem="" class="choose_button not_active" id="take_this_material">Выбрать</button>
+		        </div>
+		    </div>
+		    <!-- Попап материалы -->
+
+		    <!-- Попап план -->
+		    <div style="display: none;" id="popup_plan">
+		        <div class="popup_title">Выполнение плана</div>
+		        <div class="middle_box for_focus">
+		            <div class="about_text not_good">
+		                Общий план работы выполнен не полностью
+		            </div>
+
+		             <div class="about_text good hide">
+		                Общий план работы выполнен полностью
+		            </div>
+
+		            <div class="plan_box insert_input_box">
+		                <div class="fact_box">
+		                    <div class="fact_text">Факт выполнения</div>
+			                <div class="for_mobile_line">
+			                    <div class="inp_box">
+			                        <input class="form_input" type="text" id="main_fact" placeholder="0">
+			                        <span>м²</span>
+			                        <span>&nbsp;&nbsp;/&nbsp;&nbsp;<span class="full_fact_val">7 000</span> м²</span>
+			                    </div>
+
+			                    <div class="full for_mobile hide">
+				                    <img src="img/full.svg">
+				                    <div>
+										Полное
+				                    </div>
+				                </div>
+			                </div>
+		                </div>
+
+		                <div class="full for_desctop">
+		                    <img src="img/full.svg">
+		                    <div>
+		                    	Все выполнено
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+
+		        <div class="reason_box">
+		        	<div class="about_reason">
+			            <div class="reason_title">Укажите причину</div>
+			            <div class="select_box mark_class">
+			                <div class="this_var mark_class">
+			                    <div class="mark_class" id="cur_var">Плохая погода на объекте</div>
+			                    <svg class="mark_class" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+			                        <path d="M1 1L6 6L11 1" stroke="#222222" stroke-linecap="round" stroke-linejoin="round"/>
+			                    </svg>
+			                </div>
+			                <div class="vars hide mark_class">
+			                    <div class="var_item mark_class">Плохая погода на объекте</div>
+			                    <div class="var_item mark_class">Ещё одна причина</div>
+			                    <div class="var_item mark_class text">Иная причина</div>
+			                </div>
+			            </div>
+			            <textarea class="hide" id="reason_text" placeholder="Опишите причину ..."></textarea>
+		            </div>
+
+		            <div class="button_line">
+		                <button id="cancel" class="plan_form_buttons">Отменить</button>
+		                <button id="save_plan_form" class="plan_form_buttons">Сохранить</button>
+		            </div>
+		        </div>
+		    </div>
+		    <!-- Попап план -->
+
+		    <!-- Попап работы -->
+		    <div style="display: none;" id="popup_jobs" class="popup_avto_workers">
+		        <div class="title_line">
+		            <div class="title_item active">Добавить работу из проекта</div>
+		        </div>
+
+		        <div class="smth_box">
+		            <div class="smth_item" data-idjob="1">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    Работа_1
+		                </div>
+
+		                <div class="smth_num">12.1.2</div>
+		            </div>
+
+		            <div class="smth_item" data-idjob="2">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    Работа_2
+		                </div>
+
+		                <div class="smth_num">13.1.12</div>
+		            </div>
+
+		            <div class="smth_item" data-idjob="3">
+		                <div class="status_box">
+		                    <svg class="galka hide" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <path d="M1 7L6 12L16.5 1.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+		                    </svg>
+		                    <svg class="not_this hide" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                        <circle cx="8" cy="8" r="7.3" stroke="black" stroke-width="1.4"/>
+		                        <path d="M2.90918 13.0908L13.4546 2.54536" stroke="black" stroke-width="1.4"/>
+		                    </svg>
+		                </div>
+
+		                <div class="smth_name">
+		                    Работа_3
+		                </div>
+
+		                <div class="smth_num">13.1.12</div>
+		            </div>
+		        </div>
+
+		        <div class="bottom_line">
+		            <button data-iditem="" class="choose_button not_active" id="take_this_job">	Выбрать
+		            </button>
+		        </div>
+		    </div>
+		    <!-- Попап работы -->
+			
+		</div>
+
+		<footer>
+			<div class="wrap">
+				<div class="obj_box">
+					<div class="obj_text">Объекты</div>
+					<div class="tesks_box hide">
+						<div class="obj_name">1000304</div>
+						<div class="delimeter"></div>
+
+						<div class="for_mobile_line">
+							<div class="amount_box">
+								<img src="img/galka.svg">
+								<div>2 / <span class="all_jobs_numb">3</span> работ</div>
+							</div>
+
+							<div class="save_box_mobile hide">
+								<svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 9.5L7 0L4.5 7.5H9L2 16.5L4 9.5H0Z" fill="#F27E3D"/>
+								</svg>
+								<div>Есть изменения</div>
+							</div>
+						</div>
+
+						<div class="color_line">
+							<div class="color_line_item" style="width: calc(100%/3 - 5px); background: #FFD873;"></div>
+							<div class="color_line_item" style="width: calc(100%/3 - 5px); background: #48C698;"></div>
+							<div class="color_line_item" style="width: calc(100%/3 - 5px); background: #FFD873;"></div>
+						</div>
+					</div>
+					<div class="quest_img_box mark_class">
+						<img class="quest_img mark_class" src="img/quest.svg">
+						<div class="quest_box hide mark_class">
+							<div class="status_item mark_class">
+								<div class="round mark_class" style="background: #D2D9E5"></div>
+								<div class="status_name mark_class">Ожидается выполнение</div>
+							</div>
+
+							<div class="status_item mark_class">
+								<div class="round mark_class" style="background: #48C698"></div>
+								<div class="status_name mark_class">Выполнено</div>
+							</div>
+
+							<div class="status_item two_round_box mark_class">
+								<div class="two_round mark_class">
+									<div class="round left mark_class" style="background: #FFD873"></div>
+									<div class="round mark_class" style="background: #FF8268"></div>
+								</div>
+								<div class="status_name mark_class">Частичное выполнение</div>
+							</div>
+
+							<div class="status_item mark_class">
+								<div class="round mark_class" style="background: #BD9DFF"></div>
+								<div class="status_name mark_class">Не работали</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="quest_boxx">
+					<img src="img/footer_logo.svg">
+					<div>Есть вопросы?</div>
+				</div>
+
+				<div class="save_box hide">
+					<div class="lightning">
+						<svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 9.5L7 0L4.5 7.5H9L2 16.5L4 9.5H0Z" fill="#F27E3D"/>
+						</svg>
+						<div>Есть несохраненные изменения</div>
+					</div>
+					<a data-fancybox="" class="save_list" data-src="#popup_plan" href="javascript:;">
+						Сохранить
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="fancybox/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html> 
